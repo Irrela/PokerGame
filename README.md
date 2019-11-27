@@ -50,8 +50,6 @@ There are 9 categories of hand as follows,in order of decreasing value:
 9. High card:consists of 5 cards.
 
 ### About user input
-Users need to assign cards for players,the main program is 'Poker.java' and expects some multiple of 5 cards on the command line.
-
 Cards should be entered on the command line as two-character strings:
 - The first being an A for Ace,K for King,Q for Queen,J for Jack,T for Ten, or digit between 2 and 9 for ranks 2~9. 
 - The second character should be a C for Clubs (♣),D for Diamonds (♦),H for Hearts (♥),or S for Spades (♠).
