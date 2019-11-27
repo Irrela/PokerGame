@@ -9,7 +9,15 @@ There are a great mant variations of poker game,this project:
 - Allow same hand for multiple players,thus draw is possible.
 
 ## How to run
-Users need to assign cards for players,the main program is 'Poker.java' and expects some multiple of 5 cards on the command line.
+### User Compilation required
+Download dictionary `src` and compile 3 java files in terminal or CMD,make sure you have JDK on your machine.  
+I'm trying on a online version that can be run directly on browser but not finish yet.
+> javac Poker.java PokerCard.java Player.java
+
+Download JDK8:
+https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+### About user input
+Users need to assign cards for players,the main class is `Poker` and expects some multiple of 5 cards on the command line.
 > java Poker *card1 card2 card3 card4 card5...*
 
 And the program will generate the description and result of this round of game:  
@@ -48,6 +56,21 @@ There are 9 categories of hand as follows,in order of decreasing value:
 7. Two pair:consists of 2 cards of one rank,2 cards of another rank,and any other card.
 8. One pair:consists of 2 cards of one rank,and any other 3 cards.
 9. High card:consists of 5 cards.
+ 
+The description of hand gives both the hand category and some indication of how to decide ties using standard Poker lingo as follows:
+
+Category | Description | Detail 
+- | :-: | :-: | :-: | -:
+Straight flush | r-high straight flush | r is highest rank in hand 
+Four of a kind | Four rs | r is rank of 4 cards 
+Full house | r1s full of r2s | r1 is rankof 3 cards; r2 is rank of2
+Flush | r-high flush | r is highest rank in hand 
+Straight | r-high straight | r is highest rank in hand 
+Three of a kind | Three rs | r is rank of 3 cards 
+Two Pair | r1s over r2s | r1 is rank of higher pair; r2 is rank of lower pair
+One Pair | Pair of rs | r is rank of pair
+High Card| r-high | r is highest rank in hand 
+
 
 ### About user input
 Cards should be entered on the command line as two-character strings:
