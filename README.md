@@ -60,7 +60,7 @@ There are 9 categories of hand as follows,in order of decreasing value:
 The description of hand gives both the hand category and some indication of how to decide ties using standard Poker lingo as follows:
 
 Category | Description | Detail 
-- | :-: | :-: | 
+ :-:| :-: | :-: 
 Straight flush | r-high straight flush | r is highest rank in hand 
 Four of a kind | Four rs | r is rank of 4 cards 
 Full house | r1s full of r2s | r1 is rankof 3 cards; r2 is rank of2
